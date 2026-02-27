@@ -2,29 +2,49 @@
 using namespace std;
 
 int main() {
-	setlocale(0,"");
+	setlocale(0, "");
 
 	const int SIZE = 5;
 	int numbers[SIZE];
+	int MapSize = 15;
 
 	int number;
-	for (int i = 1; i < 6; i++) {
-		for () {
-		}
-		for () {
-
-		}
-		for () {
-
-		}
-		for () {
-
-		}
-		for () {
-
-		}
+	cout << "|Таблица: 1" << endl;
+	for (int a=0; a < MapSize; a++) {
+		cout << "- ";
 	}
 
+	for (int y = 0; y < 5; y++) {
+
+		for (int j = 0; j < MapSize; j++) {
+			cout << " ";
+		}
+
+		cout << endl;
+		
+		
 	
+		for (int x = 1; x < MapSize;x++ ) {
+			if (x == MapSize / MapSize) {
+				cout << "| " << "Число ";
+			}
+			if (x == MapSize - 1 || x == MapSize / 2 || x == MapSize / 4) {
+				cout << "|";
+			}
+			else {
+				cout << " ";
+			}
+		}
+		
+		cout << endl;
+		
+		for (int j = 0; j < MapSize; j++) {
+			cout << "- ";
+		
+		}
+	
+	cout <<endl;
+
+	}
 
 }
